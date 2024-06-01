@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mother information</title>
+    <link rel="shortcut icon" href="Phots/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/Mother_Info.css">
+    <script src="JS/Mother_Info.js"></script>
+</head>
+<body>
+    <div class="mainContainer">
+        <form action="Mother_Info.php" method="post">
+            <div class="information">
+                <h1 align="center">Enter Mother's Info.</h1><br>
+                <div class="motherInformation">
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="firstname">First Name</label><br>
+                            <input type="text" placeholder="Firstname" id="firstname" name="firstname" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="middlename">Middle Name</label><br>
+                            <input type="text" placeholder="Middlename" id="middlename" 
+                            name="middlename" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="lastname">Last Name</label><br>
+                            <input type="text" placeholder="Lastname" id="lastname" 
+                            name="lastname" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="dob">Date Of Birth</label><br>
+                            <input type="date" id="dob" name="dob"  required>
+                        </div>
+                        <div class="input-field">
+                            <label for="Aadhar">Aadhar Number</label><br>
+                            <input type="text" id="Aadhar" name="Aadhar" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="phone">Phone No</label><br>
+                            <input type="text" id="phone" name="phone" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="bank">Bank Account No</label><br>
+                            <input type="text" id="bank" name="bank" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="ifsc">IFSC Code</label><br>
+                            <input type="text" id="ifsc" name="ifsc"  required>
+                        </div>     
+                        <div class="input-field input-field-radio">
+                            <label>Category:</label><br>
+                            <input type="radio" id="Category" name="Category" value="SC" required>SC
+                            <input type="radio" id="Category" name="Category" value="ST" required>ST
+                            <input type="radio" id="Category" name="Category" value="OBC" required>OBC
+                            <input type="radio" id="Category" name="Category" value="General" required>General
+                        </div>
+                        <div class="textarea">
+                            <label for="address">Address:</label><br>
+                            <textarea id="address" name="address" cols="30" rows="5"></textarea>
+                        </div>
+                        <div class="checkBox">
+                            <label for="child">Have Child? </label>
+                            <input type="radio" id="have_child_y" name="have_child" value="Yes" required>
+                            <label for="have_child_y">Yes</label>
+                            <input type="radio" id="have_child_n" name="have_child" value="No" required>
+                            <label for="have_child_n">No</label>
+                        </div>   
+                    </div>
+                    <button type="reset" id="reset">Reset</button>
+                    <button type="submit" id="next" onclick=" return validateForm()">Next</button>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Phots/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/child_info.css">
+    <script src="JS/Child_Info.js"></script>
+    <title>Child information</title>
+</head>
+<body>
+    <div class="mainContainer">
+        <form action="child_info.php" method="post">
+            <div class="information">
+                <h2 align="center">Enter Child's Info.</h2><br>
+                <div class="childInformation">
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="firstname">First Name</label><br>
+                            <input type="text" name="firstname" placeholder="firstname" id="firstname" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="middlename">Middle Name</label><br>
+                            <input type="text" name="middlename" placeholder="middlename" id="middlename" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="lastname">Last Name</label><br>
+                            <input type="text" name="lastname" placeholder="lastname" id="lastname" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="dob">Date Of Birth</label><br>
+                            <input type="date" name="dob" id="dob" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="Aadhar">Aadhar Number</label><br>
+                            <input type="text" name="Aadhar" id="Aadhar" required>
+                        </div>
+                        <div class="input-field input-field-radio">
+                            <label for="gender">Gender:</label><br/>
+                            <input type="radio" id="gender" name="gender" value="Male" required>Male
+                            <input type="radio" id="gender" name="gender" value="Female" required>Female
+                        </div>
+                    </div>
+                    <input type="reset" value="Reset" name="reset" id="reset">
+                    <input type="submit" value="Submit" name="submit" id="submit" onclick=" return validateForm()">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+</body>
+</html>

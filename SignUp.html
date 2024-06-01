@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="shortcut icon" href="Phots/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/SignUp.css">
+    <script src="JS/SignUp.js"></script> 
+</head>
+<body>
+    <main>
+<div class="signupContainer">
+    <form name="registration" action="SignUp.php" method="post">
+                <div class="subContainer">
+                    <p class="signup">Registration</p>
+                    <div class="fields">
+                        <div class="inputBox">
+                            <label for="username">Username:</label>
+                            <input type="text" name="username" id="username" placeholder="Username" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="firstname">First Name:</label>
+                            <input type="text" name="firstname" id="firstname" placeholder="Firstname" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Lastname" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="phone">Phone No:</label>
+                            <input type="tel" name="phone" id="phone" placeholder="Phone No" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                    </div>
+                    <div class="next">
+                        <input type="submit" name="submit" value="Register" onclick=" return validateForm()">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
